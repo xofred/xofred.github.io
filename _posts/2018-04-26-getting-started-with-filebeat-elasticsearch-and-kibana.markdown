@@ -1,9 +1,9 @@
 ---
 layout: default
-title:  "Filebeat、Elasticsearch、Kibana 日志收集快速入门"
+title:  "Filebeat、Elasticsearch、Kibana 安装配置笔记"
 ---
 
-## Filebeat、Elasticsearch、Kibana 日志收集快速入门
+## Filebeat、Elasticsearch、Kibana 安装配置笔记
 
 以下均以 mac 为例，其他操作系统的见官方相关文档
 
