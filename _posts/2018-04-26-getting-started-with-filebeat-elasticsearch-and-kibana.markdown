@@ -5,11 +5,30 @@ title:  "Filebeat、Elasticsearch、Kibana 安装配置笔记"
 
 ## Filebeat、Elasticsearch、Kibana 安装配置笔记
 
+**change log**
+
+- 2018-04-27 添加 X-Pack 卸载步骤，添加部署真实环境流程
+
+------
+
+部署真实环境流程
+
+- 找一台应用服务器安装 Elasticsearch、Kibana，作为【日志服务器】
+- [【日志服务器】上的 Nginx 代理 Elasticsearch、Kibana 的地址，访问需密码](https://coder.tw/?p=7235)
+- 所有应用服务器安装 Filebeat，日志文件写向【日志服务器】
+- 本地登【日志服务器】 Kibana 管理后台，查看日志
+
+------
+
 以下均以 mac 为例，其他操作系统的见官方相关文档
 
 [Elasticsearch、Kibana 安装](https://www.elastic.co/guide/en/beats/libbeat/6.2/getting-started.html)
 
 [X-Pack 安装步骤](https://www.elastic.co/downloads/x-pack)
+
+没想到最基本的安全模块——用户密码登录——都要收费。。。服
+
+[X-Pack 卸载步骤](https://www.elastic.co/guide/en/x-pack/current/xpack-uninstalling.html)
 
 
 
@@ -87,7 +106,3 @@ setup.kibana:
 [Kibana 手动添加 Elasticsearch 索引](https://stackoverflow.com/questions/41722972/why-are-there-no-logstash-indexes-in-kibana)
 
 **Management > Index Patterns > Add New**
-
-
-
-
