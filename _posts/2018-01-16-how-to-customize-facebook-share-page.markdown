@@ -1,9 +1,8 @@
 ---
-layout: default
+layout: single
 title:  "定制 facebook 分享页"
 ---
 
-# 定制 facebook 分享页
 
 > ## # 开放图谱标记
 >

@@ -1,9 +1,11 @@
 ---
-layout: default
+layout: single
 title:  "Rails 引入静态文件"
+toc: true
+toc_label: "目录"
+toc_icon: "cog"
 ---
 
-## Rails 引入静态文件
 
 ### 图片存放位置
 

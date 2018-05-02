@@ -1,24 +1,24 @@
 ---
-layout: default
+layout: single
 title:  "Filebeat、Elasticsearch、Kibana 安装配置笔记"
+toc: true
+toc_label: "目录"
+toc_icon: "cog"
+
 ---
 
-## Filebeat、Elasticsearch、Kibana 安装配置笔记
-
-**change log**
+## change log
 
 - 2018-04-27 添加 X-Pack 卸载步骤，添加部署真实环境流程
 
-------
-
-部署真实环境流程
+## 部署真实环境流程
 
 - 找一台应用服务器安装 Elasticsearch、Kibana，作为【日志服务器】
 - [【日志服务器】上的 Nginx 代理 Elasticsearch、Kibana 的地址，访问需密码](https://coder.tw/?p=7235)
 - 所有应用服务器安装 Filebeat，日志文件写向【日志服务器】
 - 本地登【日志服务器】 Kibana 管理后台，查看日志
 
-------
+## 安装
 
 以下均以 mac 为例，其他操作系统的见官方相关文档
 
@@ -57,7 +57,7 @@ bin/x-pack/setup-passwords auto
 
 由于 [lograge](https://github.com/roidrage/lograge) 已对 Rails 日志做了筛选和优化，暂不打算使用 Logstash
 
-
+## 配置
 
 Filebeat 配置
 
