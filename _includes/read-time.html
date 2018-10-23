@@ -1,10 +1,11 @@
 {% assign words_per_minute = site.words_per_minute | default: 200 %}
 
-{% if post.read_time %}
-  {% assign words = post.content | strip_html | number_of_words %}
-{% elsif page.read_time %}
-  {% assign words = page.content | strip_html | number_of_words %}
-{% endif %}
+<!--{% if post.read_time %}-->
+  <!--{% assign words = post.content | strip_html | number_of_words %}-->
+<!--{% elsif page.read_time %}-->
+  <!--{% assign words = page.content | strip_html | number_of_words %}-->
+<!--{% endif %}-->
+{% assign words = page.content | strip_html | strip_newlines | split: "" | size %}
 
 {% if words < words_per_minute %}
   {{ site.data.ui-text[site.locale].less_than | default: "less than" }} 1 {{ site.data.ui-text[site.locale].minute_read | default: "minute read" }}
