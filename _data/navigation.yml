@@ -1,12 +1,12 @@
 # main links
 main:
+  - title: "文章标签"
+    url: /tags/
   - title: "deviantArt 相册命令行下载工具"
     url: https://github.com/xofred/deviantart-gallery-downloader
   - title: "iTunes 降价提醒"
     url: https://itunesapptracker.herokuapp.com/
     # - title: "Sample Posts"
     #   url: /year-archive/
-    # - title: "Sample Collections"
-    #   url: /collection-archive/
     # - title: "Sitemap"
     #   url: /sitemap/
