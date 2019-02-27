@@ -3,7 +3,7 @@ title:  "用 vue-sélect 和 Rails conten_tag 实现下拉框过滤"
 toc: true
 toc_label: "目录"
 toc_icon: "cog"
-
+tags: rails vue vue-select
 ---
 
 *tldr：思路还是用 Rails 全栈那一套，只是没有 jquery 那么啰嗦*
@@ -49,7 +49,7 @@ Vue.component('v-select', VueSelect.VueSelect)
     <!-- 数据需要塞到页面，不然 js 无法直接解释 @options @dummy 的东西 -->
     <%= content_tag 'options', nil, data: @options.to_json %>
     <%= content_tag 'dummy', nil, data: @dummy.to_json %>
-    
+
     <!-- 还是以 form 提交这种 -->
     <%= simple_form_for @dummy, do %>
     	<v-select v-model="dummy" :options="options" label="name"></v-select>

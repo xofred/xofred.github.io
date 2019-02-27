@@ -4,7 +4,7 @@ title:  "Filebeat、Elasticsearch、Kibana 安装配置笔记"
 toc: true
 toc_label: "目录"
 toc_icon: "cog"
-
+tags: logs elk devops
 ---
 
 ## change log
@@ -67,7 +67,7 @@ filebeat.prospectors:
   enabled: true
   paths: # 一定要绝对路径，~/prjects/ 这种的会找不到
     - /Users/MD212/projects/elephant-server/log/development.log
-  
+
 setup.template.fields: "./fields.yml"
 
 output.elasticsearch:

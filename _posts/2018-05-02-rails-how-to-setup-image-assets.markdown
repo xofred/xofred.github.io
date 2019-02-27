@@ -4,6 +4,7 @@ title:  "Rails 引入静态文件"
 toc: true
 toc_label: "目录"
 toc_icon: "cog"
+tags: rails assets configuration
 ---
 
 
@@ -37,7 +38,7 @@ Rails.application.config.assets.precompile += %w( clipboard.min.js activity/whee
 ### view 引入静态文件
 
 ```erb
-<%= javascript_include_tag 'activity/wheel' %> 
+<%= javascript_include_tag 'activity/wheel' %>
 <%= stylesheet_link_tag 'activity/wheel' %>
 ```
 

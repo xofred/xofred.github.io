@@ -1,6 +1,7 @@
 ---
 layout: single
 title:  "转载马伯庸《寂静之城》"
+tags: novel
 ---
 
 And in the naked light I saw ten thousand people, maybe more.

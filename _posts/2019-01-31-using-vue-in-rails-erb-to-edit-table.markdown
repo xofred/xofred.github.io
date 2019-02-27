@@ -1,5 +1,6 @@
 ---
 title:  "在 erb 表格里使用 vue 定制单元格实现列表页批量更新"
+tags: rails erb vue
 ---
 
 *tl; dr: 思路是，将 `ruby` 数组循环下标作为`v-model` 的数组下标。这样可以使用 `vue`的双向绑定了*
@@ -21,9 +22,9 @@ title:  "在 erb 表格里使用 vue 定制单元格实现列表页批量更新"
       </h2>
     </div>
   </div>
-    
+
   <hr>
-    
+
   <!-- 筛选 -->
   <div class="row mb-3">
     <div class="col-12">

@@ -3,6 +3,7 @@ title:  "rabl 的一些坑"
 toc: true
 toc_label: "目录"
 toc_icon: "cog"
+tags: ruby gem rabl gotcha
 ---
 
 *tldr：好 j8 难用，最烦这种 dsl 了*

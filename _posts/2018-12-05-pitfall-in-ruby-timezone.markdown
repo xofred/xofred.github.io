@@ -3,6 +3,7 @@ title: Ruby 关于时区的坑
 toc: true
 toc_label: "目录"
 toc_icon: "cog"
+tags: ruby timezone gotcha
 ---
 
 ## [A summary of do’s and don'ts with time zones](https://robots.thoughtbot.com/its-about-time-zones#a-summary-of-do39s-and-don39ts-with-time-zones)

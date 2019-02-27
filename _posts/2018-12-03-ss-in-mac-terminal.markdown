@@ -1,5 +1,6 @@
 ---
 title:  "Mac OSX 终端走 shadowsocks 代理"
+tags: osx terminal shadowsocks
 ---
 
 原理：用本地 SS 客户端的 Socks5 作为终端 HTTP(S) 的代理

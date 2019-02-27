@@ -3,6 +3,7 @@ title:  "解决 webmock 报错 Unregistered request: POST"
 toc: true
 toc_label: "目录"
 toc_icon: "cog"
+tags: ruby gem testing
 ---
 
 一句话总结：使用 gem 之前请看说明书😂

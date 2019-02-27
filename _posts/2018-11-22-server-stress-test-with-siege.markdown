@@ -3,6 +3,7 @@ title:  "压测工具 siege 使用笔记"
 toc: true
 toc_label: "目录"
 toc_icon: "cog"
+tags: tools back-end
 ---
 
 **ps: 经同事提点，发现 [Loader.io](https://loader.io/) 强大太多了，关键还免费😂**

@@ -1,6 +1,7 @@
 ---
 layout: single
 title:  "定制 facebook 分享页"
+tags: social facebook seo
 ---
 
 
@@ -26,7 +27,7 @@ title:  "定制 facebook 分享页"
 > <meta property="og:image"              content="http://static01.nyt.com/images/2015/02/19/arts/international/19iht-btnumbers19A/19iht-btnumbers19A-facebookJumbo-v2.jpg" />
 > ```
 >
-> 
+>
 >
 > 这些属性包括我们在用户分享文章时，具体想要呈现的、与文章有关的描述性元数据。
 >
@@ -61,7 +62,7 @@ title:  "定制 facebook 分享页"
 >
 > 首次分享内容时，Facebook 爬虫将抓取并缓存所分享网址的元数据。爬虫必须“看到”图片至少一次，然后方能加以呈现。这表示第一个分享某内容的用户无法看到呈现的图片：
 >
-> 
+>
 >
 > 我们可以通过两种方法来避免这种情况，让图片在首次获得点赞或分享时即呈现：
 >

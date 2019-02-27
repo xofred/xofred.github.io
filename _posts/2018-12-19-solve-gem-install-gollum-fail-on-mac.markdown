@@ -3,6 +3,7 @@ title:  "解决 Mac 安装 gollum 时依赖的 charlock_holmes 安装时编译�
 toc: true
 toc_label: "目录"
 toc_icon: "cog"
+tags: osx gem gollum
 ---
 
 一句话总结：编译时找不到底层库，以及 clang 编译的 ruby 不兼容 c++11 语法
@@ -74,8 +75,8 @@ gem install charlock_holmes -- --with-icu-dir=/usr/local/opt/icu4c
 网上说 clang 编译的 ruby 会出现不兼容 c++11 语法的错误
 
 ```shell
-rvm use 2.3.7                                                                
-ruby -rrbconfig -e 'puts RbConfig::MAKEFILE_CONFIG["CC"]'                   
+rvm use 2.3.7
+ruby -rrbconfig -e 'puts RbConfig::MAKEFILE_CONFIG["CC"]'
 ```
 
 ```
@@ -87,7 +88,7 @@ xcrun clang
 ```shell
 rvm reinstall 2.5.1
 rvm use 2.5.1 --default
-ruby -rrbconfig -e 'puts RbConfig::MAKEFILE_CONFIG["CC"]' 
+ruby -rrbconfig -e 'puts RbConfig::MAKEFILE_CONFIG["CC"]'
 ```
 
 ```

@@ -3,6 +3,7 @@ title:  "（翻译）不适合微服务的场景"
 toc: true
 toc_label: "目录"
 toc_icon: "cog"
+tags: micro-services
 ---
 
 *一句话总结：软件开发没有银弹，任何技术都有 trade-off，微服务也不例外*

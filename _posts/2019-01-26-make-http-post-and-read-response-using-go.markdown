@@ -1,5 +1,6 @@
 ---
 title:  "学习用 go 发起 http post 并读取服务器返回"
+tags: go http beginner
 ---
 
 *tl; dr：之前用爬虫库 colly 做了个爬虫。现在想图片去重，发现 deep ai 有现成 API*
