@@ -20,7 +20,7 @@ tags: web security rails interview
 >
 > 假如一家銀行用以執行轉帳操作的URL地址如下： <http://www.examplebank.com/withdraw?account=AccoutName&amount=1000&for=PayeeName>
 >
-> 那麼，一個惡意攻擊者可以在另一个網站上放置如下代碼： <img src="<http://www.examplebank.com/withdraw?account=Alice&amount=1000&for=Badman>">
+> 那麼，一個惡意攻擊者可以在另一个網站上放置如下代碼： `<img src="<http://www.examplebank.com/withdraw?account=Alice&amount=1000&for=Badman>">`
 >
 > 如果有賬戶名為Alice的用戶訪問了惡意站點，而她之前剛訪問過銀行不久，登錄信息尚未過期，那麼她就會損失1000資金。
 >
