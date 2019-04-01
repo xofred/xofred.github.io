@@ -172,7 +172,7 @@ RSpec.describe V3::RecentlyViewedsController, type: :controller do
         let(:token) { member.mobile_token }
 
         example "1_5 GET /api/v3.3/recently_vieweds 获取首页用户最近查看商品(有数据，法语支持)" do
-          header "lang", 'fr'
+          header "lang", 'fr' # 传 header
 
           generate_data
           do_request
