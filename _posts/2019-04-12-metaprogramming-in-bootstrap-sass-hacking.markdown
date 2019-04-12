@@ -3,7 +3,7 @@ title:  "bootstrap-sass 3.2.0.3 黑客大佬用到的元编程"
 toc: true
 toc_label: "目录"
 toc_icon: "cog"
-tags: ruby gem cve
+tags: ruby gem cve metaprogramming
 ---
 
 *tl; dr [**BKSpurgeon** 大佬的分析](https://github.com/twbs/bootstrap-sass/issues/1195#issuecomment-479756912)*
