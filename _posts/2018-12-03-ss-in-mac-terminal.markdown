@@ -3,6 +3,8 @@ title:  "Mac OSX 终端走 shadowsocks 代理"
 tags: osx terminal shadowsocks
 ---
 
+*tl; dr [这位大佬的教程更简洁有力](https://github.com/mrdulin/blog/issues/18)*
+
 原理：用本地 SS 客户端的 Socks5 作为终端 HTTP(S) 的代理
 
 ------
