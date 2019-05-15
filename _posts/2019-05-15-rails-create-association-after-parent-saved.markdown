@@ -11,7 +11,7 @@ tags: rails active-record
 
 ## 原理
 
-[感谢大佬的解决方案](https://stackoverflow.com/questions/3808782/rails-best-practice-how-to-create-dependent-has-one-relations)
+感谢[大佬的解决方案](https://stackoverflow.com/questions/3808782/rails-best-practice-how-to-create-dependent-has-one-relations)
 
 贴一段 rails guides 的讲解
 
