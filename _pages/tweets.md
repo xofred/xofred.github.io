@@ -1,0 +1,4 @@
+---
+permalink: /tweets/
+layout: tweets
+---
