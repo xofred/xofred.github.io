@@ -9,8 +9,6 @@ tags: ruby exception error
 
 *tldr 眼见为虚，测试为实*
 
-#
-
 ### 自定义异常类及 `rspec` 测试
 
 ```ruby
@@ -37,7 +35,8 @@ RSpec.describe Reseller, type: :model do
   describe "#recharge" do
     it "余额不足，充值抛异常" do
       # 注意要测 raise_error 的话，expect 跟的是花括号
-      expect{reseller.recharge(user, 100)}.to raise_error(Reseller::InsufficientFundError)
+      expect{reseller.recharge(user, 100)}
+        .to raise_error(Reseller::InsufficientFundError)
     end
   end
 end
@@ -56,8 +55,8 @@ end
 
 create_order
 # "可能产生异常的行为"
-"返回订单"
-=> "可能产生异常的行为"
+# "返回订单"
+# => "可能产生异常的行为"
 ```
 
 `ensure`里面的代码一定会执行，但不是最终函数返回值。其实业务想要“返回订单”，但 `create_order` 最终返回的是 `begin` 里面最后的一句，“可能产生异常的行为”
@@ -73,8 +72,8 @@ end
 
 create_order
 # "可能产生异常的行为"
-"返回订单"
-=> "返回订单"
+# "返回订单"
+# => "返回订单"
 ```
 
 所以，要确保 `create_order` 最终"返回订单”，不能加在 `ensure` 里面执行，而是整个 `begin...end` block 之外
