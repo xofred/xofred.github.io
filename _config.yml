@@ -12,14 +12,14 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 remote_theme             : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "dark" # "", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "zh-CN"
-title                    : "去死吧！功夫墙"
+title                    : "一九八四"
 title_separator          : "-"
-name                     : "xofred"
-description              : "Not an amazing website."
+name                     : "温斯顿·史密斯"
+description              : "Ruby 工程师。喜欢对程序员友好的事物。"
 url                      : "https://xofred.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "xofred/xofred.github.io"
@@ -98,9 +98,9 @@ analytics:
 # Site Author
 author:
   name             : "xofred"
-  avatar           : "https://avatars2.githubusercontent.com/u/2174219?s=460&v=4"
-  bio              : "I am not an amazing person."
-  location         : "Guangzhou"
+  avatar           : "https://upload.wikimedia.org/wikipedia/zh/8/88/Winston_Smith.jpg"
+  bio              : "Ruby 工程师。喜欢对程序员友好的事物。"
+  location         : "大洋国"
   email            : "fwin3000@gmail.com"
   uri              : "https://xofred.github.io/"
   home             : "https://xofred.github.io/"

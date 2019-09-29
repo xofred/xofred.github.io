@@ -7,7 +7,7 @@ tags: gfw wireguard google-cloud
 
 ---
 
-*tldr 去死吧，功夫墙*
+*仅限工作需要，特别用途者请考虑后果*
 
 ### 服务端部分
 
