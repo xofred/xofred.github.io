@@ -3,11 +3,11 @@ title:  "Google 云计算实例安装 Wireguard"
 toc: true
 toc_label: "目录"
 toc_icon: "cog"
-tags: gfw wireguard google-cloud
+tags: censorship wireguard google-cloud
 
 ---
 
-*仅限工作需要，特别用途者请考虑后果*
+*仅限工作需要，有隐私需求的建议 Tor 浏览器*
 
 ### 服务端部分
 
