@@ -1,12 +1,10 @@
 # main links
 main:
-  - title: "推特"
-    url: /tweets/
   - title: "文章标签"
     url: /tags/
   - title: "deviantArt 相册命令行下载工具"
     url: https://github.com/xofred/deviantart-gallery-downloader
-  - title: "iTunes 降价提醒"
+  - title: "iTunes 国区降价提醒"
     url: https://itunesapptracker.herokuapp.com/
     # - title: "Sample Posts"
     #   url: /year-archive/
