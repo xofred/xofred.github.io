@@ -6,6 +6,8 @@ toc_icon: "cog"
 tags: ruby metaprogramming
 ---
 
+*`method_missing` 很神奇，但也不少坑*
+
 ### 打开类
 
 与其死记硬背 `strftime` 的格式化参数，或者每次都复制粘贴
@@ -54,7 +56,7 @@ end
 ```
 
 ```bash
-pry                                                                                                      
+pry
 [1] pry(main)> Time.methods.include?(:from_js_timestamp)
 => false
 [2] pry(main)> load 'lib/time.rb'
@@ -85,7 +87,7 @@ class ApplicationController < ActionController::Base
   def current_user
     @current_user = User.find_by(id: params[:id])
   end
-  
+
   def check_login!
     return render status: 403 if !current_user
   end
@@ -95,10 +97,10 @@ end
 ```ruby
 class SomeController < ApplicationController
   before_action :check_login!, except: [:actions_do_not_require_login]
-  
+
   def most_actions
   end
-  
+
   def actions_do_not_require_login
   end
 end
@@ -194,7 +196,7 @@ Ranking.instance_methods.grep(/_lb_name$/)
 
 ##### 幽灵方法：method_missing
 
-下面的例子其实不是很好。`method_missing` 比较适用的场景应该是 `active-record` 或者 `builder` 这种**针对大量未知属性，自动生成读写方法**的库，目的是为了**自适应**。而可能性已知或有限的情况下，只是为了**消除重复代码**，用 `define_method` 更合适。鉴于 `method_missing` 可能会带来副作用，记住这条原则：*use Dynamic Methods if you can and Ghost Methods if you have to*. 
+下面的例子其实不是很好。`method_missing` 比较适用的场景应该是 `active-record` 或者 `builder` 这种**针对大量未知属性，自动生成读写方法**的库，目的是为了**自适应**。而可能性已知或有限的情况下，只是为了**消除重复代码**，用 `define_method` 更合适。鉴于 `method_missing` 可能会带来副作用，记住这条原则：*use Dynamic Methods if you can and Ghost Methods if you have to*.
 
 ```ruby
 # 消除 model 中相似的 scope
