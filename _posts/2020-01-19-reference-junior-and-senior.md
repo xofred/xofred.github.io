@@ -4,6 +4,9 @@ toc: true
 toc_label: "目录"
 toc_icon: "cog"
 tags: thoughts
+header:
+  overlay_image: https://pbs.twimg.com/media/EOk4U2jWAAAZFh0?format=jpg&name=4096x4096
+  caption: "Photo credit: [**@Frostylva**](https://twitter.com/Frostylva)"
 
 ---
 
