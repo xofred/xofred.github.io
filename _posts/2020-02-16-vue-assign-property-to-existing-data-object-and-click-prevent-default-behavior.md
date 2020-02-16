@@ -34,10 +34,12 @@ var app = new Vue({
 
           for (var i = 0; i < self.help_me_finds.length; i++) {
             // Vue 官方推荐的解决方案
-            self.help_me_finds[i] = Object.assign({}, self.help_me_finds[i], { showCustomerModal: false })
-            self.help_me_finds[i] = Object.assign({}, self.help_me_finds[i], { showSalesModal: false })
-            self.help_me_finds[i] = Object.assign({}, self.help_me_finds[i], { todoEditable: false })
-            self.help_me_finds[i] = Object.assign({}, self.help_me_finds[i], { btnDisabled: false })
+            self.help_me_finds[i] = Object.assign({}, self.help_me_finds[i], {
+              showCustomerModal: false,
+              showSalesModal: false,
+              todoEditable: false,
+              todoEditable: false,
+            })
           }
         },
       });
