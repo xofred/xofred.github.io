@@ -1,5 +1,8 @@
 ---
 title:  "纯 CSS 居中，以及超出高度自动显示滚动条"
+toc: true
+toc_label: "目录"
+toc_icon: "cog"
 tags: css frontend
 
 ---
@@ -28,3 +31,7 @@ tags: css frontend
 [Pure CSS Dynamic Sized Centered Modals](http://lynn.io/2014/02/22/modalin/)
 
 [Add scrollbar to modal window](https://stackoverflow.com/questions/44288362/add-scrollbar-to-modal-window)
+
+### 彩蛋
+
+[第一次在【同性社交平台】作答](https://stackoverflow.com/questions/50957334/v-model-with-datepicker-input/60054221#60054221)，有点小兴奋
