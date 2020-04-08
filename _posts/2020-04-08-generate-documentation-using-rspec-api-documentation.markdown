@@ -16,6 +16,11 @@ tags: rspec testing ruby gem documentation
 - 大幅精简 `apitome` 的配置文件，只讲比较值得关注的点
 - 补充一些之前省略了但应有的说明
 - 新加入自己踩到的一些坑
+- ~~画面大幅提升~~
+
+先来个感性认识
+
+![img](https://user-images.githubusercontent.com/2174219/78761725-8f64a280-79b5-11ea-9a6d-d816b4efc578.png)
 
 以下着重介绍 `rspec_api_documentation` 的用法，至于 rspec 建议参考其[官方文档](https://relishapp.com/rspec)
 
@@ -179,10 +184,6 @@ end
 ```
 
 静态文件加载需要 `uglifier` 和 `jquery-rails`，并且如果项目部署时没有执行预编译的话（例如 API 项目一般没有 view 和后台，不会做这件事），要在本地生成编译好的静态文件 `bundle exec rake assets:precompile` 并将其加入版本控制
-
-最后来个感性认识
-
-![img](https://user-images.githubusercontent.com/2174219/78761725-8f64a280-79b5-11ea-9a6d-d816b4efc578.png)
 
 ### Reference
 
