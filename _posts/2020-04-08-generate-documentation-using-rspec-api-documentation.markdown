@@ -13,7 +13,8 @@ tags: rspec testing ruby gem documentation
 ~~跟卡婊学重制~~，本文推出~~二十周年~~一周年重制版
 
 - 适当精简业务 spec 文件例子，着重介绍 `rspec_api_documentation` 的 DSL
-- 适当精简 `apitome` 的配置文件，只讲比较值得关注的地方
+- 适当精简 `apitome` 的配置文件，只讲比较值得关注的点
+- 补充一些之前省略了但应有的说明
 - 新加入自己踩到的一些坑
 
 以下着重介绍 `rspec_api_documentation` 的用法，至于 rspec 建议参考其[官方文档](https://relishapp.com/rspec)
