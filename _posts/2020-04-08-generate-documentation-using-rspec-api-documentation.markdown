@@ -62,7 +62,7 @@ RSpec.describe ProductsController do
     "
     # header 非必须关键词，描述性内容，用于反映到文档
     # 不影响下面 do_request 实际请求的 headers
-    header "Host", "testc.shopperplus.com:3004"
+    header "Host", "api_endpoint_host"
     header "Content-Type", "application/json"
     # parameter 非必须关键词，描述性内容，用于反映到文档
     # 不影响下面 do_request 实际请求的接口参数
@@ -167,7 +167,7 @@ if !Rails.env.production?
   Apitome.setup do |config|
     # 在线文档入口地址。如果多个项目共用一个域名，建议修改
     config.mount_at = "/api/docs"
-    # 例如项目一 config.mount_at = "/apitome/shopperplus"
+    # 例如项目一 config.mount_at = "/apitome/api"
     # 然后项目二 config.mount_at = "/apitome/scanner_api"
   end
 end
