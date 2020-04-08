@@ -134,7 +134,6 @@ bundle exec rspec
 生成的文档格式默认是 html 文件，当然 ~~9102~~0202 年了不建议打包将一堆 html 发给同事看。所以强烈建议弄成在线文档，而且 apitome 会加上样式好看很多
 
 Gemfile 加入 `apitome` 相关
-
 ```ruby
 group :development, :staging do
   # 在线 API 文档
@@ -144,7 +143,12 @@ group :development, :staging do
 end
 ```
 
-配置 `rspec_api_documentation`
+执行初始化，生成 `apitome` 的配置文件 `config/initializers/apitome.rb` 以及文档首页 `doc/api.md`
+```shell
+rails generate apitome:install
+```
+
+修改 `rspec_api_documentation` 生成的文档格式
 
 ```ruby
 # spec/spec_helper.rb
@@ -155,7 +159,7 @@ RspecApiDocumentation.configure do |config|
 end
 ```
 
-配置 `apitome`，我是默认配置了，在线文档入口地址默认是 `项目所在域名/api/doc`
+进一步定制 `apitome`，我是默认配置了，在线文档入口地址默认是 `项目所在域名/api/doc`
 
 ```ruby
 # config/initializers/apitome.rb
