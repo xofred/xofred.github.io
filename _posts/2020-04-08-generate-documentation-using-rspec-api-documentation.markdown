@@ -164,7 +164,7 @@ end
 
 ```ruby
 # config/initializers/apitome.rb
-# Gemfile 生产环境没有(也不应该有) apitome
+# 生产环境没有加入 apitome (也不应该有，除非想 API 文档让全世界看到)
 # 因此要跳过下面的代码，不然会报错
 if !Rails.env.production?
   require 'apitome'
