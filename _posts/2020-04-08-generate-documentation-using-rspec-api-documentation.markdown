@@ -41,7 +41,9 @@ mkdir spec/acceptance
 以下用一个业务 API spec 文件做例子
 ```ruby
 # spec/acceptance/products_controller_spec.rb
+
 require 'rails_helper'
+
 # 只在需要生成文档的 spec 文件引入
 # 不建议全局加在 `rails_helper.rb` 或者 `spec_helper.rb`
 # 因为文档主要是针对 controller 这种 API 测试
@@ -51,10 +53,12 @@ require 'rspec_api_documentation/dsl'
 RSpec.describe ProductsController do
   let(:user) { User.where.not(mobile_token: nil).first }
   let(:sku) { Product.first }
+
   # resource 必须关键词。内容可以随便起任何名字
   # 但由于 rspec_api_documentation 据此生成文档超链接
   # 建议最好用 ASCII 字符集，例如英文、数字、下划线
   resource "Products" do
+
     # explanation 非必须关键词，描述性内容，用于反映到文档
     # 内容可以是字符串，也可以像这里直接写 html
     explanation "
@@ -66,29 +70,36 @@ RSpec.describe ProductsController do
       <li>使用 HTTP PATCH 或 PUT 均可</li>
     </ul>
     "
+
     # header 非必须关键词，描述性内容，用于反映到文档
     # 不影响下面 do_request 实际请求的 headers
     header "Host", "api_endpoint_host"
     header "Content-Type", "application/json"
+
     # parameter 非必须关键词，描述性内容，用于反映到文档
     # 不影响下面 do_request 实际请求的接口参数
     parameter :token, "手机用户 token", type: :string, require: true
     parameter :id, "产品条形码", type: :string, require: true
+
     # GET API 例子
     # 必须关键词，影响 do_request 实际发起请求
     # 根据项目路由例如 config/routes 填即可
     get "/v1.0/products/:id/grids" do
       context "返回产品所在货架" do
+
         # let 非必须关键词，用于 do_request 传参
         let(:token) { user.mobile_token }
+
         # example 必须关键词，相当于 rspec 的 it 关键词
         # 关系到文档地址，建议英文。原因同 resource
         example "Get product grids, return data" do
           allow_any_instance_of(Product).to receive(:shipping_weight) { 666 }
+
           # do_request 必须关键词，实际发起请求
           # 可以像下面的写法来传参
           # 或者在 context 和 example 之间用 let 关键词
           do_request(id: BarcodeUtil.barcode(sku))
+
           # 正如作者所说，需要修改以下 rspec 常用方法的调用
           # You must use response_body, status, response_content_type, etc.
           #   to access data from the last response.
@@ -101,6 +112,7 @@ RSpec.describe ProductsController do
         end
       end
     end
+
     # POST API 例子
     patch "/v1.0/products/:id" do
       parameter :weight, "货物重量，单位克", type: :integer, require: false
@@ -158,6 +170,7 @@ rails generate apitome:install
 
 ```ruby
 # spec/spec_helper.rb
+
 require 'rspec_api_documentation/dsl'
 RspecApiDocumentation.configure do |config|
   # 文档改成 json 格式，供 apitome 生成在线文档
@@ -169,6 +182,7 @@ end
 
 ```ruby
 # config/initializers/apitome.rb
+
 # 生产环境没有加入 apitome (也不应该有，除非想 API 文档让全世界看到)
 # 因此要跳过下面的代码，不然会报错
 if !Rails.env.production?
@@ -176,9 +190,9 @@ if !Rails.env.production?
 
   Apitome.setup do |config|
     # 在线文档入口地址。如果多个项目共用一个域名，建议修改
-    config.mount_at = "/api/docs"
     # 例如项目一 config.mount_at = "/apitome/api"
     # 然后项目二 config.mount_at = "/apitome/scanner_api"
+    config.mount_at = "/api/docs"
   end
 end
 ```
@@ -190,3 +204,4 @@ end
 [rspec_api_documentation](https://github.com/zipmark/rspec_api_documentation)
 
 [apitome](https://github.com/jejacks0n/apitome)
+
