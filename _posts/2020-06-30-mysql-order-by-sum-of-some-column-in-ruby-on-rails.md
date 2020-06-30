@@ -4,7 +4,7 @@ tags: mysql ruby-on-rails
 
 ---
 
-*No, u can't just `.order('SUM(column_name)'')`, I tried*
+*No, u can't just `.order('SUM(column_name)')`, I tried*
 
 Let's say we have a `products` table, and a `monthly_product_sales` table. We want to select all the columns from `products`, but `ORDER BY` the `SUM` of `monthly_product_sales.quantity`. Here's how we do it.
 
