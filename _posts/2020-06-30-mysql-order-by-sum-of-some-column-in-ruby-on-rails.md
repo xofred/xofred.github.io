@@ -1,5 +1,5 @@
 ---
-title:  "Mysql order by sum of some column in ruby on rails"
+title:  "MySQL Order by Sum of Some Column in Ruby on Rails"
 tags: mysql ruby-on-rails
 
 ---
