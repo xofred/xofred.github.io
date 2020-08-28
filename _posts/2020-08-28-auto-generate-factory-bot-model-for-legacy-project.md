@@ -35,3 +35,7 @@ tables.each do |table|
   end
 end
 ```
+
+### Reference
+- [Can FactoryBot generate factories after your models have been created?](https://stackoverflow.com/questions/11702265/can-factorybot-generate-factories-after-your-models-have-been-created)
+- [Feature Request: Allow creation of factory from existing model #63](https://github.com/thoughtbot/factory_bot_rails/issues/63)
