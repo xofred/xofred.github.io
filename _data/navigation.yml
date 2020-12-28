@@ -1,10 +1,10 @@
 # main links
 main:
-  - title: "文章标签"
+  - title: "tags"
     url: /tags/
-  - title: "deviantArt 相册命令行下载工具"
+  - title: "deviantArt gallery downloader"
     url: https://github.com/xofred/deviantart-gallery-downloader
-  - title: "iTunes 国区降价提醒"
+  - title: "iTunes app price tracker"
     url: https://itunesapptracker.herokuapp.com/
     # - title: "Sample Posts"
     #   url: /year-archive/

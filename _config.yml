@@ -15,11 +15,11 @@ remote_theme             : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "default" # "default", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "zh-CN"
-title                    : "一九八四"
+locale                   : "en"
+title                    : "1984"
 title_separator          : "-"
-name                     : "温斯顿·史密斯"
-description              : "Ruby 工程师。喜欢对程序员友好的事物。"
+name                     : "Winston Smith"
+description              : "Ruby programmer. Wathcing by the Big Brother."
 url                      : "https://xofred.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "xofred/xofred.github.io"
@@ -97,10 +97,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "温斯顿·史密斯"
+  name             : "Winston Smith"
   avatar           : "https://upload.wikimedia.org/wikipedia/zh/8/88/Winston_Smith.jpg"
-  bio              : "Ruby 工程师。喜欢对程序员友好的事物。"
-  location         : "大洋国"
+  bio              : "Ruby programmer. Watching by the Big Brother."
+  location         : "Oceania"
   email            : "fwin3000@gmail.com"
   uri              : "https://xofred.github.io/"
   home             : "https://xofred.github.io/"

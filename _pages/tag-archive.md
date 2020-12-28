@@ -1,5 +1,5 @@
 ---
-title: "文章标签"
+title: "tags"
 permalink: /tags/
 layout: tags
 author_profile: true
