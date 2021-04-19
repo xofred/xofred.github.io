@@ -6,7 +6,7 @@ tags: sql mysql
 
 *https://www.dofactory.com/sql/join*
 
-![img](https://www.dofactory.com/Images/sql-joins.png)
+![img](https://user-images.githubusercontent.com/2174219/115179601-4259f700-a106-11eb-8769-dd5b838bbb9a.png)
 
 The image above gives a pretty good concept about different kinds of joins of SQL.
 
