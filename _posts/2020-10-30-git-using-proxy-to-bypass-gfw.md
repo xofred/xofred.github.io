@@ -4,7 +4,7 @@ tags: censorship git
 
 ---
 
-*Fuck GFW. Fuck CCP*
+*Fuck GFW*
 
 Usage( [Credit](https://gist.github.com/evantoli/f8c23a37eb3558ab8765) )
 
@@ -25,9 +25,3 @@ Or `git config --global --edit`
 [https]
 	proxy = https://127.0.0.1:1087
 ```
-
-I can't breathe, left radical.
-
-Why don't you comment on CCP's terrorism?
-
-Or you just took money from them, like your pal Hunter Biden?
