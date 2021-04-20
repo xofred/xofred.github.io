@@ -6,7 +6,7 @@ toc_icon: "cog"
 tags: ruby gem rabl gotcha
 ---
 
-*tldr：好 j8 难用，最烦这种 dsl 了*
+*tldr：jbuilder 劣化版？*
 
 ### partial 只能传 `object`
 
