@@ -1,5 +1,5 @@
 ---
-title:  "大疆电面问题之 csrf"
+title:  "csrf 原理及防范"
 toc: true
 toc_label: "目录"
 toc_icon: "cog"
