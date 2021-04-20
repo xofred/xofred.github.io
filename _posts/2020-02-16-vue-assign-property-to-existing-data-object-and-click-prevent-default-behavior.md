@@ -7,7 +7,7 @@ tags: vue frontend
 
 ---
 
-*这算是 vue 的坑了吧*
+*有点坑*
 
 ### 已有 data 对象(已初始化的 vue 实例)动态添加字段
 ```javascript
