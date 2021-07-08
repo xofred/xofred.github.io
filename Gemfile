@@ -4,4 +4,4 @@ group :jekyll_plugins do
   gem "github-pages", ">= 214"
   gem 'jekyll-archives', '>= 2.2.1'
 end
-gem "jekyll-include-cache", ">= 0.2.0"
+gem "jekyll-include-cache", ">= 0.2.1"
