@@ -27,7 +27,9 @@ Indexes:
 ```
 
 ```sql
-EXPLAIN ANALYZE SELECT "webhooks".* FROM "webhooks" WHERE (payload ->> 'kind' IS NOT NULL) AND (payload ->> 'recording' IS NOT NULL);
+EXPLAIN ANALYZE SELECT "webhooks".* FROM "webhooks"
+  WHERE (payload ->> 'kind' IS NOT NULL)
+  AND (payload ->> 'recording' IS NOT NULL);
 ```
 
 ```
@@ -48,15 +50,19 @@ It's still `Seq Scan`. The `index_webhooks_on_payload` index is useless😒
 Turns out, the `? field_name` and `field_name IS NOT NULL` are both required, if we want the `field_name IS NOT NULL` condition to use indexes.
 
 ```sql
-CREATE INDEX idx ON webhooks ((payload ->> 'kind')) WHERE (payload ? 'kind' AND payload -> 'kind' IS NOT NULL);
+CREATE INDEX idx ON webhooks ((payload ->> 'kind'))
+  WHERE (payload ? 'kind' AND payload -> 'kind' IS NOT NULL);
 ```
 
 ```sql
-CREATE INDEX idx2 ON webhooks ((payload ->> 'recording')) WHERE (payload ? 'recording' AND payload -> 'recording' IS NOT NULL);
+CREATE INDEX idx2 ON webhooks ((payload ->> 'recording'))
+  WHERE (payload ? 'recording' AND payload -> 'recording' IS NOT NULL);
 ```
 
 ```sql
-EXPLAIN ANALYZE SELECT "webhooks".* FROM "webhooks" WHERE (payload ? 'kind' AND payload -> 'kind' IS NOT NULL) AND (payload ? 'recording' AND payload -> 'recording' IS NOT NULL);
+EXPLAIN ANALYZE SELECT "webhooks".* FROM "webhooks"
+  WHERE (payload ? 'kind' AND payload -> 'kind' IS NOT NULL)
+  AND (payload ? 'recording' AND payload -> 'recording' IS NOT NULL);
 ```
 
 ```
@@ -114,8 +120,10 @@ heroku rails c
 ```
 
 ```ruby
-Webhook.where("payload ? 'kind' AND payload -> 'kind' IS NOT NULL").where("payload ? 'recording' AND payload -> 'recor
-ding' IS NOT NULL").explain
+Webhook
+  .where("payload ? 'kind' AND payload -> 'kind' IS NOT NULL")
+  .where("payload ? 'recording' AND payload -> 'recording' IS NOT NULL")
+  .explain
 ```
 
 ```
