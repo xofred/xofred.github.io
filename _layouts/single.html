@@ -28,7 +28,10 @@ layout: default
         <header>
           {% if page.title %}<h1 id="page-title" class="page__title" itemprop="headline">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>{% endif %}
           {% if page.read_time %}
-            <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
+            <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i>
+             {% include read-time.html %} 
+             <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fxofred.github.io%2Fpostgres-jsonb-partial-index-for-not-null-querying%2F&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"/></a>
+            </p>
           {% endif %}
         </header>
       {% endunless %}
