@@ -6,7 +6,9 @@ tags: javascript
 
 *Tldr: `URL.searchParams`*
 
-![](https://user-images.githubusercontent.com/2174219/149091462-5456ea2f-ff96-4490-a171-97d248205fee.mp4)
+<video width="320" height="240" controls>
+  <source src="https://user-images.githubusercontent.com/2174219/149091462-5456ea2f-ff96-4490-a171-97d248205fee.mp4" type="video/mp4">
+</video>
 
 ```erb
 <!-- some legacy erb -->
@@ -53,3 +55,5 @@ $(function () {
 [Easy URL Manipulation with URLSearchParams](https://developers.google.com/web/updates/2016/01/urlsearchparams)
 
 [How can I delete a query string parameter in JavaScript?](https://stackoverflow.com/questions/1634748/how-can-i-delete-a-query-string-parameter-in-javascript)
+
+[How to add local video file in markDown md file](https://stackoverflow.com/questions/46273751/how-to-add-local-video-file-in-markdown-md-file#46296699)
