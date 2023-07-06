@@ -44,7 +44,7 @@ tags: chatgpt chatbot axios frontend
 >
 > In the above code, we use the request interceptor to check if the URL includes `'price_break_discount'`. If it does, we set `keepToastOpen` to `true`. Then, in the response interceptor, we check for this parameter and perform the corresponding actions.
 
-**Q: However, I'm handling it within the error. Is there a way to access the `response` context within the response itself? If I directly write `httpErrorHandler(error.response.data.message, response.config.params.keepToastOpen)` within the error handling code, it throws an error saying `response` is undefined. Here's the code snippet: (I pasted the relevant business code)**
+**Q: However, I'm handling it within the error. Is there a way to access the `response` context within the error handler? If I directly write `httpErrorHandler(error.response.data.message, response.config.params.keepToastOpen)` within the error handling code, it throws an error saying `response` is undefined. Here's the code snippet: (I pasted the relevant business code)**
 
 > In the error handling function, you cannot directly access the response object (`response`). However, you can retrieve the request configuration information, including the `params` parameter, from the `error` object's `config` property. You can then pass `response.config.params.keepToastOpen` as the third argument to the `httpErrorHandler` function.
 >
